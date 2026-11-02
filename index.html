@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="bn" class="dark scroll-smooth selection:bg-indigo-500/30 selection:text-indigo-200">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Property BD // রিয়েল এস্টেট ডিজিটাল ব্লুপ্রিন্ট (Powered by IDIO IT)</title>
+    <meta
+      name="description"
+      content="বিজনেসের রণক্ষেত্রে জয়ী হওয়ার সেরা কৌশল। কোটি টাকার প্রোডাক্ট বা অফিসের ঝুঁকি না নিয়ে সিস্টেম ও ব্র্যান্ডিংয়ের জোরে নিজের রিয়েল এস্টেট রেফারেল ব্যবসা দাঁড় করান।"
+    />
+    <meta name="theme-color" content="#030305" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --font-sans: 'Hind Siliguri', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+        --font-mono: 'JetBrains Mono', monospace;
+      }
+      body {
+        font-family: var(--font-sans);
+        background-color: #030305;
+        color: #f8fafc;
+        overflow-x: hidden;
+      }
+      .font-mono { font-family: var(--font-mono); }
+      .bg-grid-pattern {
+        background-size: 48px 48px;
+        background-image: 
+          linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+          linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+      }
+      .spotlight-card { position: relative; overflow: hidden; }
+      .spotlight-card::before {
+        content: ''; position: absolute; inset: 0;
+        background: radial-gradient(600px circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(99, 102, 241, 0.14), transparent 40%);
+        opacity: 0; transition: opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1); pointer-events: none; z-index: 1;
+      }
+      .spotlight-card:hover::before { opacity: 1; }
+      @keyframes marquee {
+        0% { transform: translateX(0%); }
+        100% { transform: translateX(-50%); }
+      }
+      .animate-marquee {
+        display: flex;
+        width: max-content;
+        animation: marquee 34s linear infinite;
+      }
+      .animate-marquee:hover { animation-play-state: paused; }
+    </style>
+  </head>
+  <body class="relative min-h-screen bg-[#030305] text-slate-100 antialiased">
+    <!-- Ambient Background Aurora -->
+    <div class="pointer-events-none fixed inset-0 z-0 overflow-hidden" aria-hidden="true">
+      <div class="absolute -top-[20%] left-1/2 h-[650px] w-[1100px] -translate-x-1/2 rounded-full bg-gradient-to-tr from-indigo-600/20 via-violet-600/15 to-cyan-500/10 blur-[140px]"></div>
+      <div class="absolute top-[45%] -right-[15%] h-[500px] w-[500px] rounded-full bg-indigo-500/10 blur-[130px]"></div>
+      <div class="absolute bottom-[10%] -left-[15%] h-[500px] w-[600px] rounded-full bg-emerald-500/10 blur-[130px]"></div>
+    </div>
+
+    <!-- NAVIGATION -->
+    <header class="fixed top-0 right-0 left-0 z-50 px-4 pt-4 sm:px-6 lg:px-8">
+      <nav class="mx-auto flex max-w-7xl items-center justify-between rounded-2xl border border-white/[0.08] bg-[#06070b]/80 px-4 py-3 shadow-[0_20px_50px_rgba(0,0,0,0.6)] backdrop-blur-xl transition-all duration-300 hover:border-white/[0.15]">
+        <a href="#" class="group flex items-center gap-3">
+          <div class="flex h-10 w-10 items-center justify-center rounded-xl border border-indigo-400/30 bg-gradient-to-br from-indigo-500/30 via-violet-500/20 to-transparent shadow-[0_0_25px_rgba(99,102,241,0.35)]">
+            <span class="font-mono text-base font-black text-indigo-300">PB</span>
+          </div>
+          <div class="flex flex-col">
+            <span class="text-base font-bold tracking-tight text-white">PROPERTY BD</span>
+            <span class="font-mono text-[10px] tracking-widest text-indigo-400">POWERED BY IDIO IT</span>
+          </div>
+        </a>
+
+        <div class="hidden items-center gap-1 md:flex">
+          <a href="#problems" class="rounded-lg px-3.5 py-2 text-sm font-medium text-slate-300 transition hover:bg-white/5 hover:text-white">সমস্যা ও সমাধান</a>
+          <a href="#story" class="rounded-lg px-3.5 py-2 text-sm font-medium text-slate-300 transition hover:bg-white/5 hover:text-white">বাস্তব গল্প</a>
+          <a href="#bento" class="rounded-lg px-3.5 py-2 text-sm font-medium text-slate-300 transition hover:bg-white/5 hover:text-white">ডিজিটাল সিস্টেম</a>
+          <a href="#routine" class="rounded-lg px-3.5 py-2 text-sm font-medium text-slate-300 transition hover:bg-white/5 hover:text-white">৩০ দিনের রুটিন</a>
+        </div>
+
+        <div class="flex items-center gap-3">
+          <a href="tel:+8801836768877" class="hidden items-center gap-2 rounded-xl border border-emerald-500/25 bg-emerald-500/10 px-3.5 py-2 font-mono text-xs font-medium text-emerald-300 lg:flex">
+            <span class="h-2 w-2 animate-ping rounded-full bg-emerald-400"></span>
+            <span>+880 18 3676 8877</span>
+          </a>
+          <a href="#order" class="inline-flex items-center gap-2 rounded-xl bg-white px-4 py-2.5 text-xs font-bold text-slate-950 shadow-[0_0_25px_rgba(255,255,255,0.25)] transition hover:scale-[1.03] hover:bg-indigo-50 sm:text-sm">
+            <span>আজই শুরু করুন</span>
+            <span>→</span>
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="relative z-10">
+      <!-- HERO SECTION -->
+      <section class="bg-grid-pattern relative overflow-hidden pt-32 pb-20 sm:pt-40 sm:pb-28">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="mx-auto max-w-4xl text-center">
+            <div class="mb-6 inline-flex items-center gap-2.5 rounded-full border border-indigo-500/30 bg-indigo-500/10 px-4 py-1.5 text-xs font-semibold text-indigo-200 backdrop-blur-md sm:text-sm">
+              <span class="rounded-full bg-indigo-500 px-2 py-0.5 font-mono text-[10px] font-bold text-white uppercase">BLUEPRINT</span>
+              <span>বিজনেসের রণক্ষেত্রে জয়ী হওয়ার সেরা কৌশল!</span>
+            </div>
+
+            <h1 class="bg-gradient-to-b from-white via-white/95 to-slate-300 bg-clip-text text-4xl font-bold tracking-tight text-transparent sm:text-6xl lg:text-7xl lg:leading-[1.15]">
+              এখন সময় যার,<br />
+              <span class="bg-gradient-to-r from-indigo-400 via-violet-300 to-cyan-300 bg-clip-text text-transparent">উদ্যোক্তা হবার শ্রেষ্ঠ সময়।</span>
+            </h1>
+
+            <p class="mx-auto mt-6 max-w-2xl text-lg font-medium text-rose-300/90 sm:text-2xl">
+              কিন্তু এদেশের উদ্যোক্তাদের চিরন্তন সমস্যা...
+            </p>
+          </div>
+
+          <div id="problems" class="mt-10 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
+            <div class="spotlight-card group rounded-2xl border border-white/[0.08] bg-white/[0.03] p-6 backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-indigo-500/40">
+              <div class="inline-flex rounded-lg border bg-gradient-to-br from-rose-500/20 to-orange-500/5 border-rose-500/30 text-rose-300 px-3 py-1 font-mono text-xs font-bold">সমস্যা #০১</div>
+              <h2 class="mt-4 text-lg font-bold text-white sm:text-xl">আইডিয়া আছে, কিন্তু পুঁজি নাই</h2>
+              <p class="mt-2 text-sm leading-relaxed text-slate-400">মাথার ভেতর দারুণ সব বিজনেস প্ল্যান ঘুরছে, কিন্তু গোডাউন ভাড়া, প্রোডাক্ট সোর্সিং আর অফিস ডেকোরেশন করতে যে লাখ লাখ টাকার দরকার—সেই ফান্ডিং কোথায়?</p>
+            </div>
+            <div class="spotlight-card group rounded-2xl border border-white/[0.08] bg-white/[0.03] p-6 backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-indigo-500/40">
+              <div class="inline-flex rounded-lg border bg-gradient-to-br from-amber-500/20 to-yellow-500/5 border-amber-500/30 text-amber-300 px-3 py-1 font-mono text-xs font-bold">সমস্যা #০২</div>
+              <h2 class="mt-4 text-lg font-bold text-white sm:text-xl">পুঁজি আছে, কিন্তু ভালো টিম নাই</h2>
+              <p class="mt-2 text-sm leading-relaxed text-slate-400">কষ্ট করে জমানো টাকা বা লোন নিয়ে না হয় নামলেন, কিন্তু ডিজাইন কে করবে? ভিডিও স্ক্রিপ্ট কে লিখবে? অ্যাড রান করবে কে? একা সব করতে গিয়ে শেষমেশ কোনো কাজই ঠিকমতো হয় না।</p>
+            </div>
+            <div class="spotlight-card group rounded-2xl border border-white/[0.08] bg-white/[0.03] p-6 backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-indigo-500/40">
+              <div class="inline-flex rounded-lg border bg-gradient-to-br from-indigo-500/20 to-violet-500/5 border-indigo-500/30 text-indigo-300 px-3 py-1 font-mono text-xs font-bold">সমস্যা #০৩</div>
+              <h2 class="mt-4 text-lg font-bold text-white sm:text-xl">ভালো টিম আছে, কিন্তু সেলস নাই</h2>
+              <p class="mt-2 text-sm leading-relaxed text-slate-400">প্রোডাক্ট রেডি, লোকজনও আছে, পোস্ট বুস্টও করছেন—কিন্তু দিনশেষে শুধু 'Price Please' মেসেজ ছাড়া আসল ক্রেতার দেখা নেই। মাস শেষে অফিস ভাড়া আর স্যালারি দিতে গিয়ে পকেট ফাঁকা।</p>
+            </div>
+            <div class="spotlight-card group rounded-2xl border border-white/[0.08] bg-white/[0.03] p-6 backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-indigo-500/40">
+              <div class="inline-flex rounded-lg border bg-gradient-to-br from-cyan-500/20 to-emerald-500/5 border-cyan-500/30 text-cyan-300 px-3 py-1 font-mono text-xs font-bold">সমস্যা #০৪</div>
+              <h2 class="mt-4 text-lg font-bold text-white sm:text-xl">টুকটাক সেলস হচ্ছে, কিন্তু ব্র্যান্ডিং হচ্ছে না</h2>
+              <p class="mt-2 text-sm leading-relaxed text-slate-400">পরিচিতদের কাছে বা রেফারেলে দুই-একটা বিক্রি হয়তো হচ্ছে, কিন্তু মার্কেটে আপনার নিজস্ব কোনো ডিজিটাল ব্র্যান্ড ভ্যালু তৈরি হচ্ছে না। ফলে আজ কাজ বন্ধ তো কাল ইনকাম বন্ধ!</p>
+            </div>
+          </div>
+
+          <div class="mx-auto mt-14 max-w-3xl text-center">
+            <h2 class="text-2xl font-bold text-white sm:text-4xl">
+              সব সমস্যার সমাধান একটাই— <span class="text-indigo-400">Property BD</span>-এর রিয়েল এস্টেট ডিজিটাল ব্লুপ্রিন্ট। কেন?
+            </h2>
+            <p class="mt-3 text-lg font-semibold text-cyan-300">জানতে হলে নিচের ভিডিওটি মনোযোগ দিয়ে দেখুন ↓</p>
+          </div>
+
+          <!-- Video Box -->
+          <div class="relative mx-auto mt-8 max-w-5xl">
+            <div class="pointer-events-none absolute -inset-1 rounded-[28px] bg-gradient-to-r from-indigo-500/35 via-violet-500/25 to-cyan-500/35 opacity-75 blur-2xl"></div>
+            <div class="relative overflow-hidden rounded-[24px] border border-white/[0.15] bg-[#08090f]/95 shadow-2xl">
+              <div class="flex items-center justify-between border-b border-white/[0.08] bg-white/[0.02] px-5 py-3">
+                <div class="flex items-center gap-2">
+                  <span class="h-3 w-3 rounded-full bg-rose-500/80"></span>
+                  <span class="h-3 w-3 rounded-full bg-amber-500/80"></span>
+                  <span class="h-3 w-3 rounded-full bg-emerald-500/80"></span>
+                  <span class="ml-2 font-mono text-xs text-slate-400">property-bd://digital-blueprint-masterclass.mp4</span>
+                </div>
+                <span class="rounded-full border border-emerald-500/30 bg-emerald-500/10 px-3 py-0.5 font-mono text-[11px] text-emerald-300">● MUST WATCH</span>
+              </div>
+              <div class="relative flex aspect-video flex-col items-center justify-center bg-gradient-to-b from-[#0b0d19] to-[#05060a] p-8 text-center">
+                <div class="absolute inset-0 bg-grid-pattern opacity-40"></div>
+                <a href="#routine" class="group relative z-10 flex h-20 w-20 items-center justify-center rounded-full border border-indigo-400/40 bg-indigo-500/20 text-white shadow-[0_0_50px_rgba(99,102,241,0.6)] backdrop-blur-md transition-all duration-300 hover:scale-110 hover:bg-indigo-500">
+                  <svg class="ml-1 h-8 w-8" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z" /></svg>
+                </a>
+                <h3 class="relative z-10 mt-6 max-w-2xl text-xl font-bold text-white sm:text-3xl">
+                  কীভাবে নিজস্ব জমি বা ফ্ল্যাট নির্মাণের কোটি টাকার ঝুঁকি না নিয়েও শুধুমাত্র ডিজিটাল ব্র্যান্ডিং ও রেফারেল সিস্টেমের মাধ্যমে স্থায়ী ব্যবসা গড়ে তুলবেন
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- MARQUEE -->
+      <section class="border-y border-white/[0.06] bg-[#05060a] py-8">
+        <div class="mx-auto max-w-7xl px-4">
+          <div class="overflow-hidden">
+            <div class="animate-marquee flex items-center gap-12 pr-12 font-mono text-xs font-semibold tracking-wider text-slate-400 uppercase">
+              <span>★ ZERO INVENTORY RISK</span><span>•</span>
+              <span>★ 30-DAY DONE-FOR-YOU DIGITAL SETUP</span><span>•</span>
+              <span>★ OMNICHANNEL BRANDING (FB, GOOGLE, YT, TIKTOK, IG)</span><span>•</span>
+              <span>★ HIGH-TICKET REAL ESTATE REFERRAL COMMISSIONS</span><span>•</span>
+              <span>★ POWERED BY IDIO IT (GULSHAN-1, DHAKA)</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- REALITY CHECK & MINDSET -->
+      <section class="relative py-20 sm:py-28">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="grid grid-cols-1 gap-10 lg:grid-cols-12 lg:items-center">
+            <div class="spotlight-card rounded-3xl border border-white/[0.08] bg-white/[0.02] p-8 sm:p-10 lg:col-span-6">
+              <span class="rounded-lg border border-rose-500/30 bg-rose-500/10 px-3 py-1 font-mono text-xs text-rose-300">REALITY CHECK</span>
+              <h2 class="mt-4 text-2xl font-bold text-white sm:text-3xl">এ দেশে আমরা বিজনেস শুরু করি অন্যের দেখাদেখি অথবা তথাকথিত মোটিভেশন গুরুদের অনুপ্রেরণায়!</h2>
+              <p class="mt-4 text-base leading-relaxed text-slate-300">বিজনেস সম্বন্ধে আমাদের <strong>Holistic View</strong> থাকে না। তাইতো বিজনেসে নেমে সহজেই দেউলিয়া হয়ে যাই। বিজনেসের প্রতি ধাপেই আমরা অসংখ্য ভুল করতে থাকি। কারণ বাংলাদেশের মার্কেটে কীভাবে কম ঝুঁকিতে বিজনেস করবো এর কোনো পারফেক্ট গাইডলাইন বা রেডি সিস্টেম কোথাও নেই।</p>
+              <div class="mt-6 rounded-2xl border border-emerald-500/30 bg-emerald-500/10 p-6">
+                <h3 class="text-xl font-bold text-emerald-300">Property BD-এর ব্লুপ্রিন্ট ফলো করে কেউ দেউলিয়া হয় না, কারণ…</h3>
+                <p class="mt-2 text-sm leading-relaxed text-slate-200">এখানে আপনাকে কোটি টাকা খরচ করে জমি কিনতে হচ্ছে না বা বিল্ডিং বানাতে হচ্ছে না। প্রোডাক্ট ও প্রজেক্ট আগে থেকেই রেডি। আর আপনার লোগো ডিজাইন, সোশ্যাল মিডিয়া সেটআপ, কনটেন্ট পোস্টিং, ম্যাগনেটিক মার্কেটিং ও কাস্টমার তৈরির জন্য রয়েছে আমাদের <strong>৩০ দিনের স্টেপ-বাই-স্টেপ ফ্রেমওয়ার্ক</strong>।</p>
+              </div>
+              <div class="mt-8">
+                <a href="#order" class="inline-flex w-full items-center justify-center rounded-xl bg-gradient-to-r from-indigo-500 to-violet-600 px-6 py-4 text-base font-bold text-white shadow-lg transition hover:scale-[1.02] sm:w-auto">বিজনেসে ভুল থেকে বাঁচতে চাই →</a>
+              </div>
+            </div>
+
+            <div class="spotlight-card rounded-3xl border border-white/[0.08] bg-white/[0.02] p-8 sm:p-10 lg:col-span-6">
+              <span class="rounded-lg border border-indigo-500/30 bg-indigo-500/10 px-3 py-1 font-mono text-xs text-indigo-300">MINDSET SHIFT</span>
+              <h2 class="mt-4 text-2xl font-bold text-white sm:text-3xl">টাকা আর গায়ের জোরে নয় — সিস্টেম আর ব্রেইনের জোরে বিজনেস হয়।</h2>
+              <p class="mt-3 text-base leading-relaxed text-slate-300">শুধু টাকা থাকলে আর গাধার মতো খাটুনি দিলেই এখনকার দিনে বিজনেস হয় না। <strong class="text-white">In fact, it's TRUE.</strong> ডিজিটাল এই যুগে বিজনেস মানে ব্যাটেলগ্রাউন্ড। মাটি নয়, এ যুদ্ধে দখল করতে হয় কাস্টমারের মাইন্ড ও ট্রাস্ট।</p>
+              <ul class="mt-5 space-y-3 text-sm text-slate-300">
+                <li class="flex items-start gap-2.5"><span class="mt-1 text-emerald-400">✔</span><span><strong>জিরো ইনভেন্টরি স্ট্রেস:</strong> প্রোডাক্ট নষ্ট হওয়া বা গোডাউন ভাড়ার কোনো চিন্তা নেই।</span></li>
+                <li class="flex items-start gap-2.5"><span class="mt-1 text-emerald-400">✔</span><span><strong>নতুন কাস্টমার ও সেলস ফানেল:</strong> প্রপার্টি বায়ার এবং পার্টনার তৈরি করার সবচেয়ে কার্যকরী ডিজিটাল পদ্ধতি।</span></li>
+                <li class="flex items-start gap-2.5"><span class="mt-1 text-emerald-400">✔</span><span><strong>দ্বিগুণ লিড জেনারেশন:</strong> জাস্ট ক্যাম্পেইন প্ল্যান ও ভিডিও স্ক্রিপ্ট চেঞ্জ করেই হাই-ভ্যালু ক্লায়েন্ট আনার কৌশল।</span></li>
+                <li class="flex items-start gap-2.5"><span class="mt-1 text-emerald-400">✔</span><span><strong>৩০ দিনের স্টেপ বাই স্টেপ ম্যাপিং:</strong> রাইট ডিরেকশনে নিজের কর্পোরেট ব্র্যান্ড দাঁড় করানোর কমপ্লিট সেটআপ।</span></li>
+              </ul>
+              <div class="mt-8">
+                <a href="#routine" class="inline-flex w-full items-center justify-center rounded-xl border border-white/15 bg-white/5 px-6 py-4 text-base font-bold text-white transition hover:bg-white/10 sm:w-auto">এই সব কিছু একসাথে জানতে চাই →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- STORY & OPEN LETTER -->
+      <section id="story" class="border-t border-white/[0.06] bg-[#040509] py-20 sm:py-28">
+        <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+          <div class="text-center">
+            <span class="rounded-full border border-amber-500/30 bg-amber-500/10 px-4 py-1 font-mono text-xs text-amber-300 uppercase">REAL ENTREPRENEUR JOURNEY</span>
+            <h2 class="mt-4 text-3xl font-extrabold text-white sm:text-5xl">আমি যেভাবে ঘুরে দাঁড়িয়েছি ও প্রথাগত ব্যবসার ফাঁদ থেকে বেরিয়ে এসেছি</h2>
+          </div>
+          <div class="mt-12 space-y-6 rounded-3xl border border-white/[0.08] bg-white/[0.02] p-8 text-base leading-relaxed text-slate-300 sm:p-12 sm:text-lg">
+            <p>না বুঝে প্রথাগত বিজনেসে নেমে একটার পর একটা প্রজেক্টে ব্যর্থ হয়েছি। কমপক্ষে ১২ ধরনের গতানুগতিক বিজনেসে লস করেছি। পুঁজি হারিয়ে হয়েছি নিঃস্ব।</p>
+            <div class="my-6 border-l-4 border-indigo-500 bg-indigo-500/10 p-5 font-bold text-white">গাধার মতো খাটার দিন শেষ — এখন হবে শুধুই স্মার্ট ডিজিটাল বিজনেস।</div>
+            <p>শুরুতে সবার মতো এক যুগ গাধার মতো খেটেছি। কিন্তু পরে বুঝলাম—<strong>আসল সমস্যাটা চেষ্টায় ছিল না, সমস্যাটা ছিল বিজনেস মডেলে।</strong> ৫০০ টাকার প্রোডাক্ট বিক্রি করে ১০০ টাকা লাভ করতে মাসে হাজার কাস্টমারের পেছনে ছুটতে হয়। অথচ হাই-ভ্যালু রিয়েল এস্টেট সেক্টরে সঠিক ডিজিটাল ফানেল ও ব্র্যান্ডিং ব্যবহার করে মাসে মাত্র ১-২টি সফল রেফারেল ডিল ক্লোজ করলেই সাধারণ ব্যবসার পুরো বছরের সমান আয় করা সম্ভব!</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- BENTO DELIVERABLES -->
+      <section id="bento" class="py-20 sm:py-28">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="mx-auto max-w-3xl text-center">
+            <span class="rounded-full border border-indigo-500/30 bg-indigo-500/10 px-4 py-1 font-mono text-xs text-indigo-300 uppercase">COMPLETE DONE-FOR-YOU SYSTEM</span>
+            <h2 class="mt-4 text-3xl font-extrabold text-white sm:text-5xl">এই ব্লুপ্রিন্ট ও ১ মাসের সিস্টেমে যুক্ত হলে আপনি যা যা পাচ্ছেন</h2>
+          </div>
+          <div class="mt-14 grid grid-cols-1 gap-6 lg:grid-cols-12">
+            <div class="spotlight-card rounded-3xl border border-white/[0.08] bg-white/[0.03] p-8 lg:col-span-8">
+              <span class="rounded-lg border border-indigo-500/30 bg-indigo-500/10 px-3 py-1 font-mono text-xs text-indigo-300">OMNICHANNEL SETUP</span>
+              <h3 class="mt-4 text-2xl font-bold text-white sm:text-3xl">মাল্টি-চ্যানেল সোশ্যাল মিডিয়া ও কর্পোরেট ব্র্যান্ডিং</h3>
+              <p class="mt-2 text-sm text-slate-400 sm:text-base">আপনার ব্যবসার নামে প্রফেশনাল লোগো বাছাই করে Facebook, Google, Instagram, X (Twitter), TikTok এবং YouTube-এ অ্যাকাউন্ট খোলা ও সাজানো হবে।</p>
+            </div>
+            <div class="spotlight-card rounded-3xl border border-white/[0.08] bg-white/[0.03] p-8 lg:col-span-4">
+              <span class="rounded-lg border border-emerald-500/30 bg-emerald-500/10 px-3 py-1 font-mono text-xs text-emerald-300">PAYMENT SOLUTION</span>
+              <h3 class="mt-4 text-2xl font-bold text-white">ভার্চুয়াল কার্ড ও অ্যাড সাপোর্ট</h3>
+              <p class="mt-2 text-sm text-slate-400">ফেসবুকে বিজ্ঞাপনের টাকা দেওয়ার জন্য ভার্চুয়াল কার্ড না থাকলে আমরাই করে দেবো!</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 30 DAY ROUTINE -->
+      <section id="routine" class="border-t border-white/[0.06] bg-[#040509] py-20 sm:py-28">
+        <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+          <div class="mx-auto max-w-3xl text-center">
+            <span class="rounded-full border border-emerald-500/30 bg-emerald-500/10 px-4 py-1 font-mono text-xs text-emerald-300 uppercase">IDIO IT // 30-DAY EXECUTION ROADMAP</span>
+            <h2 class="mt-4 text-3xl font-extrabold text-white sm:text-5xl">ব্লুপ্রিন্টের ভেতরে কী কী আছে? (আমাদের ১ মাসের কাজের রুটিন)</h2>
+          </div>
+
+          <div class="mt-12 rounded-3xl border border-amber-500/30 bg-amber-500/10 p-6 sm:p-8">
+            <h3 class="text-xl font-bold text-amber-300">📋 কাজ শুরু করার আগে আমাদের যা যা আপনি দিবেন:</h3>
+            <div class="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-3">
+              <div class="rounded-xl border border-white/10 bg-black/40 p-4 text-sm text-white"><strong>১. ভার্চুয়াল কার্ড:</strong> ফেসবুকে বিজ্ঞাপনের টাকা দেওয়ার জন্য — অথবা আমরাই করে দিব।</div>
+              <div class="rounded-xl border border-white/10 bg-black/40 p-4 text-sm text-white"><strong>২. ফেসবুক আইডি:</strong> আপনার একটি সচল ফেসবুক আইডি বা পুরনো অ্যাকাউন্ট।</div>
+              <div class="rounded-xl border border-white/10 bg-black/40 p-4 text-sm text-white"><strong>৩. এনআইডি (NID):</strong> আপনার এনআইডি (NID) কার্ডের হার্ডকপি।</div>
+            </div>
+          </div>
+
+          <div class="mt-12 space-y-5">
+            <div class="spotlight-card rounded-2xl border border-white/10 bg-white/[0.02] p-6"><span class="rounded-lg bg-indigo-500 px-3 py-1 font-mono text-xs font-bold">১ম দিন</span> <h3 class="mt-3 text-xl font-bold text-white">অপ্টিমাইজড বিজনেস ফেসবুক পেজ সেটআপ</h3><p class="mt-1 text-sm text-slate-300">আপনার ব্যবসার নামে সুন্দর করে একটি ফেসবুক পেজ খোলা হবে।</p></div>
+            <div class="spotlight-card rounded-2xl border border-white/10 bg-white/[0.02] p-6"><span class="rounded-lg bg-indigo-500 px-3 py-1 font-mono text-xs font-bold">২য় দিন</span> <h3 class="mt-3 text-xl font-bold text-white">গুগল ও মাল্টি-চ্যানেল সোশ্যাল অ্যাকাউন্ট তৈরি</h3><p class="mt-1 text-sm text-slate-300">গুগল ও অন্যান্য দরকারি সোশ্যাল মিডিয়ায় (Instagram, X, TikTok, YouTube) অ্যাকাউন্ট খোলা হবে।</p></div>
+            <div class="spotlight-card rounded-2xl border border-white/10 bg-white/[0.02] p-6"><span class="rounded-lg bg-indigo-500 px-3 py-1 font-mono text-xs font-bold">৩য় ও ৪র্থ দিন</span> <h3 class="mt-3 text-xl font-bold text-white">লোগো বাছাই ও প্রফেশনাল ব্র্যান্ডিং</h3><p class="mt-1 text-sm text-slate-300">ব্যবসার জন্য একটি সুন্দর লোগো বাছাই করা হবে এবং পেজ ও অ্যাকাউন্টগুলো সবদিক থেকে প্রফেশনালভাবে সাজানো হবে।</p></div>
+            <div class="spotlight-card rounded-2xl border border-white/10 bg-white/[0.02] p-6"><span class="rounded-lg bg-indigo-500 px-3 py-1 font-mono text-xs font-bold">৫ম ও ৬ষ্ঠ দিন</span> <h3 class="mt-3 text-xl font-bold text-white">নিয়মিত পোস্ট আপলোড ও ভিডিও স্ক্রিপ্ট প্ল্যানিং</h3><p class="mt-1 text-sm text-slate-300">পেজে নিয়মিত পোস্ট আপলোড শুরু হবে এবং প্রজেক্ট বা পার্টনার ক্যাম্পেইনের ভিডিও স্ক্রিপ্ট চূড়ান্ত করা হবে।</p></div>
+            <div class="spotlight-card rounded-2xl border border-white/10 bg-white/[0.02] p-6"><span class="rounded-lg bg-indigo-500 px-3 py-1 font-mono text-xs font-bold">২০তম দিন</span> <h3 class="mt-3 text-xl font-bold text-white">টার্গেটেড এনগেজমেন্ট ক্যাম্পেইন (Engagement Campaign)</h3><p class="mt-1 text-sm text-slate-300">টানা ১৫ দিন পেজে পোস্ট করার পর পেজের পরিচিতি বাড়ানোর জন্য এনগেজমেন্ট ক্যাম্পেইন রান করা হবে।</p></div>
+            <div class="spotlight-card rounded-2xl border border-white/10 bg-white/[0.02] p-6"><span class="rounded-lg bg-emerald-500 px-3 py-1 font-mono text-xs font-bold">২৫তম দিন</span> <h3 class="mt-3 text-xl font-bold text-white">পার্টনার অথবা প্রজেক্ট ক্যাম্পেইন রান</h3><p class="mt-1 text-sm text-slate-300">পেজের পরিচিতি বাড়ানোর ৫ দিন পর আপনার পছন্দ ও নির্দেশ অনুযায়ী আমরা ‘পার্টনার ক্যাম্পেইন’ অথবা ‘প্রজেক্ট ক্যাম্পেইন’ রান করব।</p></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FINAL CTA -->
+      <section id="order" class="py-20 sm:py-28">
+        <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+          <div class="rounded-[32px] border border-indigo-500/40 bg-gradient-to-b from-indigo-950/60 via-[#070810] to-[#040508] p-8 text-center sm:p-16">
+            <h2 class="text-3xl font-black text-white sm:text-5xl">প্রোডাক্ট রেডি, টেকনিক্যাল টিম রেডি, ১ মাসের রুটিনও রেডি! তো আর দেরি কেন?</h2>
+            <div class="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
+              <a href="tel:+8801836768877" class="inline-flex w-full items-center justify-center gap-3 rounded-2xl bg-white px-8 py-4 text-base font-bold text-slate-950 sm:w-auto">📞 সরাসরি কল করুন: +880 18 3676 8877</a>
+              <a href="https://wa.me/8801836768877" target="_blank" rel="noopener noreferrer" class="inline-flex w-full items-center justify-center gap-2 rounded-2xl border border-emerald-500/40 bg-emerald-500/20 px-8 py-4 text-base font-bold text-emerald-200 sm:w-auto">💬 WhatsApp-এ মেসেজ দিন</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-white/[0.08] bg-[#020204] py-12 text-center text-xs text-slate-400">
+      <p class="font-bold text-white">IDIO IT // Lotus Kamal Tower-2, Level 10, Road 23, Gulshan-1, Dhaka-1212</p>
+      <p class="mt-2">Phone: +880 18 3676 8877 | Email: info.idioit@gmail.com | Web: www.idioitbd.com</p>
+    </footer>
+  </body>
+</html>
