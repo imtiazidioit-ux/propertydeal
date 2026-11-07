@@ -1,20 +1,16 @@
 {
-  "name": "property-bd-landing",
+  "name": "property-deals-landing",
   "type": "module",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
-    "preview": "astro preview",
-    "deploy": "astro build && npx wrangler pages deploy dist --project-name=property-bd-landing"
+    "preview": "astro preview"
   },
   "dependencies": {
     "@astrojs/tailwind": "^5.1.2",
     "astro": "^4.16.18",
     "tailwindcss": "^3.4.17"
-  },
-  "devDependencies": {
-    "wrangler": "^3.99.0"
   }
 }
