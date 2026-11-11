@@ -107,8 +107,7 @@
             <span>+880 1712-852740</span>
           </a>
           <a
-            href="#order"
-            class="inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-amber-400 to-orange-500 px-4 py-2.5 text-xs font-bold text-slate-950 shadow-[0_0_25px_rgba(245,158,11,0.35)] transition hover:scale-[1.03] sm:text-sm"
+href="[https://pay.yourdomain.com/payment-link](https://pay.yourdomain.com/payment-link)"            class="inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-amber-400 to-orange-500 px-4 py-2.5 text-xs font-bold text-slate-950 shadow-[0_0_25px_rgba(245,158,11,0.35)] transition hover:scale-[1.03] sm:text-sm"
           >
             <span>ই-বুকটি সংগ্রহ করুন →</span>
           </a>
@@ -157,8 +156,7 @@
               <!-- Primary CTAs -->
               <div class="mt-8 flex flex-col gap-4 sm:flex-row">
                 <a
-                  href="#order"
-                  class="inline-flex items-center justify-center gap-2 rounded-2xl bg-gradient-to-r from-amber-400 via-orange-500 to-amber-500 px-8 py-4 text-base font-extrabold text-slate-950 shadow-[0_0_40px_rgba(245,158,11,0.45)] transition hover:scale-[1.02]"
+href="[https://pay.yourdomain.com/payment-link](https://pay.yourdomain.com/payment-link)"                  class="inline-flex items-center justify-center gap-2 rounded-2xl bg-gradient-to-r from-amber-400 via-orange-500 to-amber-500 px-8 py-4 text-base font-extrabold text-slate-950 shadow-[0_0_40px_rgba(245,158,11,0.45)] transition hover:scale-[1.02]"
                 >
                   <span>📖 ই-বুকটি এখনই সংগ্রহ করুন</span>
                   <span>→</span>
@@ -188,40 +186,54 @@
               </div>
             </div>
 
-            <!-- Right Column: Compact, Proportional Executive & 3D E-Book Card -->
-            <div class="relative mx-auto w-full max-w-sm lg:col-span-5">
-              <div class="pointer-events-none absolute -inset-4 rounded-full bg-gradient-to-tr from-amber-500/25 via-indigo-500/20 to-cyan-500/20 blur-2xl"></div>
+<!-- Right Column: 3D Floating E-Book Mockup -->
+<div class="relative mx-auto w-full max-w-xs sm:max-w-sm lg:col-span-5 perspective-1000">
+  <!-- Ambient Glow Behind Book -->
+  <div class="pointer-events-none absolute -inset-6 rounded-full bg-gradient-to-tr from-amber-500/35 via-orange-500/20 to-indigo-500/25 blur-3xl"></div>
 
-              <!-- Sleek Constrained Image Container (max-h-96 prevents huge vertical stretch) -->
-              <div class="relative overflow-hidden rounded-3xl bg-gradient-to-b from-white/10 to-white/[0.02] p-1.5 shadow-2xl backdrop-blur-xl">
-                <img
-                  src="confident_executive.png"
-                  alt="PROPERTY DEALS Executive"
-                  class="h-80 w-full rounded-[20px] object-cover object-top sm:h-96"
-                />
+  <!-- 3D Book Container -->
+  <div class="group relative mx-auto w-64 sm:w-72 transition-all duration-500 hover:-translate-y-3 hover:rotate-1" style="transform: rotateY(-12deg) rotateX(4deg); transform-style: preserve-3d;">
+    
+    <!-- Book Spine / Pages Edge (3D Depth Effect) -->
+    <div class="absolute top-2 -right-3 bottom-2 w-6 rounded-r-md bg-gradient-to-r from-slate-300 via-slate-100 to-slate-400 shadow-xl"></div>
+    <div class="absolute -bottom-2 left-2 right-0 h-4 rounded-b-md bg-gradient-to-b from-slate-300 to-slate-500"></div>
 
-                <!-- Floating E-Book Badge Overlay at Bottom of Image -->
-                <div class="mt-1.5 rounded-2xl bg-[#08090f]/95 p-4">
-                  <div class="flex items-center justify-between gap-3">
-                    <div>
-                      <span class="rounded bg-amber-500/20 px-2 py-0.5 font-mono text-[10px] font-bold text-amber-300">
-                        ৪০-এর পর দ্বিতীয় ইনিংস
-                      </span>
-                      <h3 class="mt-1 text-sm font-bold text-white">
-                        ইনভেন্টরি ছাড়া কমিশন মডেল গাইডবুক
-                      </h3>
-                      <p class="text-xs text-slate-400">প্রোপারটিডিল বিডি | এডিশন নভেম্বর '২৬</p>
-                    </div>
-                    <a
-                      href="#order"
-                      class="shrink-0 rounded-xl bg-amber-400 px-3.5 py-2 text-xs font-extrabold text-slate-950 transition hover:bg-amber-300"
-                    >
-                      পিডিএফ নিন
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
+    <!-- Book Front Cover -->
+    <div class="relative flex aspect-[3/4.2] flex-col justify-between overflow-hidden rounded-l-lg rounded-r-2xl border border-amber-400/40 bg-gradient-to-br from-[#0c1222] via-[#070a14] to-[#020307] p-6 shadow-[0_30px_60px_rgba(0,0,0,0.9)]">
+      <!-- Book Spine Crease Line -->
+      <div class="pointer-events-none absolute inset-y-0 left-3 w-[2px] bg-white/10 shadow-[2px_0_5px_rgba(0,0,0,0.8)]"></div>
+
+      <!-- Top Logo & Edition -->
+      <div class="relative z-10 flex items-center justify-between pl-2">
+        <div class="flex items-center gap-2">
+          <img src="property_deal_logo.jpg" alt="Logo" class="h-8 w-8 rounded object-cover" />
+          <span class="font-mono text-[10px] font-bold tracking-wider text-amber-400">PROPERTY DEALS</span>
+        </div>
+        <span class="rounded bg-white/10 px-2 py-0.5 font-mono text-[9px] text-slate-300">নভেম্বর '২৬</span>
+      </div>
+
+      <!-- Center Book Title -->
+      <div class="relative z-10 my-auto pl-2 text-left">
+        <div class="inline-block rounded border border-amber-500/30 bg-amber-500/10 px-2.5 py-0.5 text-xs font-bold text-amber-300">
+          ৪০-এর পর
+        </div>
+        <h2 class="mt-2 bg-gradient-to-r from-amber-400 via-orange-300 to-yellow-200 bg-clip-text text-4xl font-black leading-tight text-transparent sm:text-5xl">
+          দ্বিতীয়<br />ইনিংস
+        </h2>
+        <div class="mt-3 h-1 w-16 rounded bg-gradient-to-r from-amber-500 to-transparent"></div>
+        <p class="mt-3 text-xs font-semibold leading-relaxed text-slate-200 sm:text-sm">
+          চাকরি না ছেড়ে রিয়েল এস্টেট কমিশনে মাসিক বাড়তি আয়ের রোডম্যাপ
+        </p>
+      </div>
+
+      <!-- Bottom Author/Brand Footer -->
+      <div class="relative z-10 border-t border-white/10 pt-3 pl-2 flex items-center justify-between">
+        <span class="text-[11px] font-medium text-slate-400">প্রোপারটিডিল বিডি</span>
+        <span class="rounded-full bg-emerald-500/20 px-2.5 py-0.5 font-mono text-[10px] font-bold text-emerald-300">৪২ পৃষ্ঠা PDF</span>
+      </div>
+    </div>
+  </div>
+</div>
 
           </div>
         </div>
@@ -316,15 +328,22 @@
                   একজন কুড়ি-পঁচিশ বছরের তরুণ যখন স্যুট-টাই পরে কোনো প্রপার্টি বিক্রির কথা বলেন, ক্রেতার মনে অবচেতনভাবেই প্রতারিত হওয়ার সন্দেহ কাজ করে। কিন্তু আপনি যখন আপনার জীবনের অভিজ্ঞতা, পরিণত চিন্তাভাবনা আর শান্ত স্বভাব নিয়ে কথা বলেন, মানুষ স্বাভাবিকভাবেই আপনার ওপর ভরসা পায়। আপনার হাতে ইতিমধ্যে ৩টি অদৃশ্য পুঁজি রয়েছে: <strong>১. ১৫-২০ বছরের নেটওয়ার্ক, ২. পেশাদার যোগাযোগের দক্ষতা, এবং ৩. মানুষের অন্ধ আস্থা।</strong>
                 </p>
               </div>
-              <div class="flex flex-col items-center justify-center lg:col-span-4">
-                <a
-                  href="#order"
-                  class="w-full rounded-2xl bg-white px-6 py-4 text-center text-base font-extrabold text-slate-950 shadow-xl transition hover:bg-amber-50"
-                >
-                  ‘দ্বিতীয় ইনিংস’ ই-বুকটি নিন →
-                </a>
-                <span class="mt-2 text-xs text-slate-400">কোনো রিটায়ারমেন্ট নেই • আজীবন আয়ের সুযোগ</span>
-              </div>
+<!-- Right Column inside Why 40+ Wins Box: Executive Portrait + CTA -->
+<div class="flex flex-col items-center justify-center lg:col-span-4">
+  <div class="mb-4 overflow-hidden rounded-2xl border border-amber-400/30 shadow-xl">
+    <img
+      src="confident_executive.png"
+      alt="Property Deals Advisor"
+      class="h-56 w-full object-cover object-top"
+    />
+  </div>
+  <a
+    href="YOUR_UDDOKTAPAY_PAYMENT_LINK"
+    class="w-full rounded-2xl bg-gradient-to-r from-amber-400 to-orange-500 px-6 py-4 text-center text-base font-extrabold text-slate-950 shadow-xl transition hover:scale-[1.02]"
+  >
+    ‘দ্বিতীয় ইনিংস’ ই-বুকটি নিন →
+  </a>
+</div>
             </div>
           </div>
         </div>
